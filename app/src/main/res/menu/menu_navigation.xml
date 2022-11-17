@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_baseline_history_edu_24"
+        android:title="@string/text_history" />
+    <item
+        android:id="@+id/bookmarkFragment"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:title="@string/text_bookmark" />
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/text_home" />
+    <item
+        android:id="@+id/highscoreFragment"
+        android:icon="@drawable/ic_baseline_star_24"
+        android:title="Score" />
+    <item
+        android:id="@+id/triviaDialog"
+        android:icon="@drawable/ic_baseline_light_mode_24"
+        android:title="@string/text_trivia" />
+</menu>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_programming"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="411dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btnPython"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_python" />
+
+            <ImageButton
+                android:id="@+id/btnJava"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_java" />
+
+            <ImageButton
+                android:id="@+id/btnC"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_c" />
+
+            <ImageButton
+                android:id="@+id/btnCPlusPlus"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_c_plus_plus" />
+
+            <ImageButton
+                android:id="@+id/btnCSharp"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_c_sharp" />
+
+            <ImageButton
+                android:id="@+id/btnSwift"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_swift" />
+
+            <ImageButton
+                android:id="@+id/btnGo"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_go" />
+
+            <ImageButton
+                android:id="@+id/btnSQL"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_sql" />
+
+            <ImageButton
+                android:id="@+id/btnObjectC"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_objective_c" />
+
+            <ImageButton
+                android:id="@+id/btnJavaScript"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_javascript" />
+
+            <ImageButton
+                android:id="@+id/btnObjectPascal"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_object_pascal" />
+
+            <ImageButton
+                android:id="@+id/btnVbNet"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_vb_net" />
+
+            <ImageButton
+                android:id="@+id/btnHTML"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo_html" />
+        </GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

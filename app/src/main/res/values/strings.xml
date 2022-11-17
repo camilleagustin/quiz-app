@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="text_start">Start</string>
+    <string name="text_home">Home</string>
+    <string name="text_history"> Your Quiz History</string>
+    <string name="text_bookmark">Bookmarks</string>
+    <string name="text_trivia">Trivia</string>
+    <string name="text_programming">Programming Languages</string>
+    <string name="text_easy">Easy</string>
+    <string name="text_normal">Normal</string>
+    <string name="text_expert">Expert</string>
+    <string name="text_username">Username</string>
+    <string name="text_display_name">Name</string>
+    <string name="text_register">Register</string>
+    <string name="text_login">Login</string>
+    <string name="text_difficulty">Select a level</string>
+    <string name="text_darkmode">Dark Mode</string>
+    <string name="text_credit">User icons made by Freepik from www.flaticon.com</string>
+</resources>

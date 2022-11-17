@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_bg"
+    tools:context=".activities.AboutUsActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="363dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="3000dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ProjectManager"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/about_lady"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <TextView
+                android:id="@+id/ladyPm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alef"
+                android:text="Lady Ann Mariel Bravo"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProjectManager" />
+
+            <TextView
+                android:id="@+id/PositionPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alef"
+                android:text="Project Manager"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ladyPm" />
+
+
+            <TextView
+                android:id="@+id/SchoolPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PositionPM" />
+
+            <TextView
+                android:id="@+id/Analysts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="149dp"
+                android:layout_marginLeft="149dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginRight="150dp"
+                android:fontFamily="@font/alef"
+                android:text="Analysts"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SchoolPM" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Analyst_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/about_anna"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Analysts"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Analyst_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/about_lennie"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:flow_horizontalAlign="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Analysts"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <TextView
+                android:id="@+id/SchoolAna_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/annaAna" />
+
+            <TextView
+                android:id="@+id/Lennie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alef"
+                android:text="Lennie Saludes"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.869"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Analyst_2" />
+
+            <TextView
+                android:id="@+id/SchoolAna_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.923"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Lennie" />
+
+            <TextView
+                android:id="@+id/annaAna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alef"
+                android:text="Anna Joy Diaz"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:typeface="monospace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Analyst_1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Wfr_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/about_mark"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:flow_horizontalAlign="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schooldesign_1"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Wfr_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/about_erica"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:flow_horizontalAlign="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wireframedesigners"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Wfr_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/about_lili"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:flow_horizontalAlign="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schooldesign_1"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Programmer_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/about_jer"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:flow_horizontalAlign="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Prog"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Programmer_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/about_cam"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp"
+                app:flow_horizontalAlign="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Prog"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="120dp" />
+
+            <TextView
+                android:id="@+id/designers_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alef"
+                android:text="Mark Jason Sibunga"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@+id/Wfr_2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/wireframedesigners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alef"
+                android:text="Wireframe Designers"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SchoolAna_2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/designers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alef"
+                android:text="Erica Viloria"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Wfr_1" />
+
+            <TextView
+                android:id="@+id/schooldesign_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/designers" />
+
+            <TextView
+                android:id="@+id/schooldesign_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/designers_1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/designers_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:fontFamily="@font/alef"
+                android:text="Lilibeth Cruz"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Wfr_3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/schooldesign_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/designers_2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/programmer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alef"
+                android:text="Camille Agustin"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Programmer_1" />
+
+            <TextView
+                android:id="@+id/Programmer_223"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:fontFamily="@font/alef"
+                android:text="Jerdon Philip Macaraeg"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Programmer_2" />
+
+            <TextView
+                android:id="@+id/schoolprog_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alef"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/programmer_1" />
+
+            <TextView
+                android:id="@+id/schoolprog_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="University of Pangasinan"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Programmer_223" />
+
+            <TextView
+                android:id="@+id/Prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="156dp"
+                android:layout_marginRight="156dp"
+                android:fontFamily="@font/alef"
+                android:text="Programmers"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schooldesign_2" />
+
+            <TextView
+                android:id="@+id/Attribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="Attribution"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schoolprog_2" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="@string/text_credit"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
